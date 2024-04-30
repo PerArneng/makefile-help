@@ -49,7 +49,9 @@ listed under the 'Other' category.
 
 ## Requirements
 * grep
+* awk
 * A POSIX-compliant shell
+* Python (optional but recommended)
 
 ## Author
 
