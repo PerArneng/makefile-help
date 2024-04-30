@@ -7,7 +7,8 @@
 # generated help menu for users, detailing available targets and their purposes.
 #
 # Author: Per Arneng
-# LICENCE: MIT
+# License: MIT
+# Source Repo: https://github.com/PerArneng/makefile-help
 #
 # Usage:
 #   To integrate this script into a Makefile, include it in your project directory and add the following:
