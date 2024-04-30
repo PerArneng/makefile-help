@@ -55,7 +55,7 @@ Copy
 Usage: make [target] ...
 Targets:
   other:
-    clean                          Remove all build files.
+    clean          Remove all build files.
   build:
-    build-project                        Compile the project.
+    build-project  Compile the project.
 ```
