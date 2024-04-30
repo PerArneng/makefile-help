@@ -1,6 +1,7 @@
-# makefile-help.sh
+![makefile-help-logo.png](assets/makefile-help-logo.png)
 
-## Overview
+
+# makefile-help.sh
 
 `makefile-help.sh` is a shell script designed to extract and display help 
 information from Makefile targets. It generates a dynamically updated help 
@@ -13,7 +14,7 @@ menu for users, detailing available targets and their purposes.
     $ make help
 ```
 Would output something like this:
-![makefile-help-screenshot.png](makefile-help-screenshot.png)
+![makefile-help-screenshot.png](assets/makefile-help-screenshot.png)
 
 ## Installation
 
