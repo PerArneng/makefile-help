@@ -6,15 +6,14 @@
 information from Makefile targets. It generates a dynamically updated help 
 menu for users, detailing available targets and their purposes.
 
-## Author
+## Example:
+```shell
+    $ make help
+```
+Would output something like this:
+![makefile-help-screenshot.png](makefile-help-screenshot.png)
 
-Per Arneng
-
-## Licence
-
-MIT
-
-## Usage
+## Installation
 
 To use this script, include it in your project directory and add the 
 following to your Makefile:
@@ -24,6 +23,8 @@ following to your Makefile:
 help: ## Display this help.
     @sh makefile-help.sh $(MAKEFILE_LIST)
 ```
+
+Then you just need to type `make help` in your terminal.
 
 ## Target Documentation Format
 Document your Makefile targets in the following format:
@@ -47,15 +48,10 @@ listed under the 'Other' category.
 * grep
 * A POSIX-compliant shell
 
-## Example
-Here is how help information will be displayed when you run make help:
+## Author
 
-```basic
-Copy
-Usage: make [target] ...
-Targets:
-  other:
-    clean          Remove all build files.
-  build:
-    build-project  Compile the project.
-```
+Per Arneng
+
+## Licence
+
+MIT
