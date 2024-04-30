@@ -6,6 +6,8 @@
 information from Makefile targets. It generates a dynamically updated help 
 menu for users, detailing available targets and their purposes.
 
+**Disclaimer:** Currently it only supports simple named targets ex: `mytarget: ## doc`
+
 ## Example:
 ```shell
     $ make help
