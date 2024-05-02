@@ -72,17 +72,12 @@ for arg in sys.argv[1:]:
     targets = parse_makefile(arg)
     grouped = group_targets(targets)
     make_file = make_blue(arg)
-    print()
-    print(f"Help for Makefile: {make_file}")
-    print()
     print(f"{make_bold('Targets:')}")
-    print()
     for group in grouped:
         group_name = make_bold(group.name)
-        print(f"    {group_name}:")
+        print(f"  {group_name}:")
         for target in group.targets:
             padded_target = make_blue(target.target.ljust(20)) 
-            print(f"      {padded_target} {target.comment}")
-        print()
+            print(f"    {padded_target} {target.comment}")
 
-print("  \033[90mmakefile-help version: __VERSION__\033[0m\n")
+print("\033[90mmakefile-help version: __VERSION__\033[0m")

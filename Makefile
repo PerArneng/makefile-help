@@ -7,7 +7,7 @@ build-script: ## builds the final script file out of the sections
 	@cat src/section-head.sh >> makefile-help.sh
 	@cat src/section-shell.sh >> makefile-help.sh
 	@cat src/section-python.py >> makefile-help.sh
-	@sed -i '' 's/__VERSION__/0.1.0/g' makefile-help.sh
+	@sed -i '' 's/__VERSION__/0.1.1/g' makefile-help.sh
 
 
 .PHONY: help
