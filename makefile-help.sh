@@ -1,5 +1,5 @@
 #
-# generated @ 2024-05-02T16:27:24+0200
+# generated @ 2024-05-03T10:08:06+0200
 #
 #
 # `makefile-help.sh` is a shell script designed to extract and display help 
@@ -26,7 +26,7 @@ elif command -v python3 >/dev/null 2>&1; then
 fi
 awk 'BEGIN {FS = ":.*?## "; printf "\n  \033[1mTargets:\033[0m\n"} /^[a-zA-Z_-]+:.*?## / {printf "    \033[36m%-30s\033[0m %s\n", $1, $2}' $@
 printf "\n  \033[1mPro Tip:\033[0m \033[90minstall python for a better help experience!\033[0m\n"
-printf "  \033[90mmakefile-help version: 0.1.1\033[0m\n\n"
+printf "  \033[90mmakefile-help version: 0.1.2\033[0m\n\n"
 
 exit 0
 '''
@@ -50,7 +50,7 @@ class MakeTarget:
 
 def parse_makefile(file_path):
     # Regular expression to match targets and comments in the Makefile
-    target_comment_pattern = re.compile(r'^([a-zA-Z_-]+):.*?## (.*)$')
+    target_comment_pattern = re.compile(r'^(.+):.*?## (.*)$')
     
     # List to hold all MakeTarget instances
     targets = []
@@ -115,4 +115,4 @@ for arg in sys.argv[1:]:
             padded_target = make_blue(target.target.ljust(20)) 
             print(f"    {padded_target} {target.comment}")
 
-print("\033[90mmakefile-help version: 0.1.1\033[0m")
+print("\033[90mmakefile-help version: 0.1.2\033[0m")

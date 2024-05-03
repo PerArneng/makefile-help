@@ -15,7 +15,7 @@ class MakeTarget:
 
 def parse_makefile(file_path):
     # Regular expression to match targets and comments in the Makefile
-    target_comment_pattern = re.compile(r'^([a-zA-Z_-]+):.*?## (.*)$')
+    target_comment_pattern = re.compile(r'^(.+):.*?## (.*)$')
     
     # List to hold all MakeTarget instances
     targets = []

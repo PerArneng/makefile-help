@@ -7,7 +7,7 @@ build-script: ## builds the final script file out of the sections
 	@cat src/section-head.sh >> makefile-help.sh
 	@cat src/section-shell.sh >> makefile-help.sh
 	@cat src/section-python.py >> makefile-help.sh
-	@sed -i '' 's/__VERSION__/0.1.1/g' makefile-help.sh
+	@sed -i '' 's/__VERSION__/0.1.2/g' makefile-help.sh
 
 
 .PHONY: help
@@ -15,3 +15,6 @@ help: ## runs the makefile-help.sh script
 	@sh makefile-help.sh $(MAKEFILE_LIST)
 
 
+.PHONY: dummy-help-section
+dumm4-help-section: ## dummy help section
+	@echo "this is a dummy help section"
