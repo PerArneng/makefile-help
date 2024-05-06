@@ -26,6 +26,7 @@ following to your Makefile:
 help: ## Display this help.
     @sh makefile-help.sh $(MAKEFILE_LIST)
 ```
+**Note:** Make sure there is a tab before @sh...
 
 Then you just need to type `make help` in your terminal.
 
